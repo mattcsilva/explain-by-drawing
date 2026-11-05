@@ -1,0 +1,42 @@
+{
+  "layout": "sequence",
+  "question": "How does a piece of text become numbers?",
+  "example": "Follow the word “cat”. The ID and vector in this example are invented.",
+  "nodes": [
+    {
+      "id": "token",
+      "title": "Text unit",
+      "body": "A token is a unit of text. Here the word “cat” forms one token.",
+      "color": "blue",
+      "value": "“cat”"
+    },
+    {
+      "id": "id",
+      "title": "Identifier",
+      "body": "An ID is a numeric label. In this table, 42 identifies the token “cat”.",
+      "color": "purple",
+      "value": "42"
+    },
+    {
+      "id": "vector",
+      "title": "Vector",
+      "body": "A vector is an ordered list of numbers. This list is the table entry for ID 42.",
+      "color": "green",
+      "value": "[0.2, -0.7, 0.5]"
+    }
+  ],
+  "links": [
+    {
+      "from": "token",
+      "to": "id",
+      "label": "look up ID"
+    },
+    {
+      "from": "id",
+      "to": "vector",
+      "label": "look up vector"
+    }
+  ],
+  "takeaway": "The ID selects a table entry. That entry supplies the numbers the model uses in its calculations.",
+  "limit": "Each model has rules for splitting text. The choice of 42 is arbitrary in this example."
+}

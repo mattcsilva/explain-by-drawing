@@ -1,0 +1,56 @@
+{
+  "layout": "cycle",
+  "question": "How can feedback improve a paragraph?",
+  "example": "A draft says “The system is fast.” A reader needs to know which task became faster and by how much.",
+  "nodes": [
+    {
+      "id": "criterion",
+      "title": "1. Set the criterion",
+      "body": "A criterion is a condition for success. Here the claim should name the task and give a measured comparison.",
+      "color": "purple"
+    },
+    {
+      "id": "draft",
+      "title": "2. Write a draft",
+      "body": "“The search returns sooner.” The draft names a task. The reader still needs a comparison.",
+      "color": "blue"
+    },
+    {
+      "id": "review",
+      "title": "3. Check the draft",
+      "body": "Which task got faster? What did we measure? Record the missing evidence before revising.",
+      "color": "green"
+    },
+    {
+      "id": "revise",
+      "title": "4. Prepare a revision",
+      "body": "The timing is missing. Find the measurement or remove the claim, then revisit the criterion.",
+      "color": "purple"
+    }
+  ],
+  "links": [
+    {
+      "from": "criterion",
+      "to": "draft",
+      "label": "guides the draft"
+    },
+    {
+      "from": "draft",
+      "to": "review",
+      "label": "draft for review"
+    },
+    {
+      "from": "review",
+      "to": "revise",
+      "label": "missing evidence"
+    },
+    {
+      "from": "revise",
+      "to": "criterion",
+      "label": "next attempt"
+    }
+  ],
+  "stop": "Finish when the draft supports the claim. If time runs out or the evidence is unavailable, report what is missing.",
+  "takeaway": "The reviewer identifies a specific gap. That finding gives the writer a concrete change to make on the next pass.",
+  "limit": "The arrows trace a draft that still needs work. A draft that meets the criterion can leave the cycle after review."
+}

@@ -1,0 +1,23 @@
+{
+  "layout": "compare",
+  "question": "Will the text return when the editor reopens?",
+  "example": "Type the same phrase, “meeting at 2 pm”, into a simple editor in each case.",
+  "change": "Both sessions end the same way. Only one writes the phrase to a file before closing.",
+  "nodes": [
+    {
+      "id": "unsaved",
+      "title": "Kept in working memory",
+      "body": "The phrase exists only in the running editor. Closing it releases that memory. When the editor reopens, the phrase is gone.",
+      "color": "amber"
+    },
+    {
+      "id": "saved",
+      "title": "Saved to a file",
+      "body": "The editor writes the phrase to persistent storage, which keeps data after the program exits. Reopening the file brings the phrase back.",
+      "color": "green"
+    }
+  ],
+  "links": [],
+  "takeaway": "To recover the phrase, the editor needs to write it before closing and read the file after reopening.",
+  "limit": "Assume autosave is off, the save finishes and the file stays accessible. Recovering a deleted file would require a separate backup or recovery mechanism."
+}

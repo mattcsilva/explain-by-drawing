@@ -1,0 +1,6 @@
+interface:
+  display_name: "Explain by Drawing"
+  short_description: "Teach concepts with editable visual explanations"
+  default_prompt: "Use $explicar-desenhando to explain the next idea with an editable diagram and a concrete example."
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,41 @@
+{
+  "layout": "regions",
+  "question": "Where does a test run in a remote workspace?",
+  "example": "You start a test on your laptop and see the result returned by another computer.",
+  "nodes": [
+    {
+      "id": "local",
+      "title": "Your laptop",
+      "body": "It displays the interface you interact with and sends your request across the network.",
+      "color": "blue",
+      "items": [
+        "The editor or browser takes your keyboard and mouse input.",
+        "The screen displays the result."
+      ]
+    },
+    {
+      "id": "remote",
+      "title": "Remote workspace",
+      "body": "Another computer runs the test. The network carries the request and its result between the two machines.",
+      "color": "green",
+      "items": [
+        "A process is a running program. This one runs the test.",
+        "Project files supply the inputs for the test."
+      ]
+    }
+  ],
+  "links": [
+    {
+      "from": "local",
+      "to": "remote",
+      "label": "request to run the test"
+    },
+    {
+      "from": "remote",
+      "to": "local",
+      "label": "test result"
+    }
+  ],
+  "takeaway": "The test reads its inputs and runs in the remote workspace. The laptop sends the request and shows the result.",
+  "limit": "After a disconnection, the test can continue if the remote workspace stays on and its process survives the session."
+}
