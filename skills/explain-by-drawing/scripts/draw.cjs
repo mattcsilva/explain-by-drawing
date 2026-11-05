@@ -237,7 +237,7 @@ function toExcalidraw(scene) {
     }
     return b;
   });
-  return { type: 'excalidraw', version: 2, source: 'explicar-desenhando', elements,
+  return { type: 'excalidraw', version: 2, source: 'explain-by-drawing', elements,
     appState: { viewBackgroundColor: PAPER, gridSize: null }, files: {} };
 }
 function main(argv) {

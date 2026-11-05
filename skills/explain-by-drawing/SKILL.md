@@ -1,5 +1,5 @@
 ---
-name: explicar-desenhando
+name: explain-by-drawing
 description: "Teach a concept through editable explanatory drawings. Use when someone asks to learn through diagrams, understand a mechanism visually, or continue a lesson on an existing board. Supports Excalidraw in Obsidian and standalone diagrams, with optional study memory."
 ---
 
@@ -44,6 +44,6 @@ Where helpful, vary one condition and ask for a prediction, such as what happens
 
 ## Optional study memory
 
-When the user asks for continuity across sessions, or their workspace instructions already request it, use `estudo-continuo` if installed and an authorized destination is available. Discover it through the environment's skill catalog. Read the topic and its resume point before teaching. After a meaningful step, record concepts, questions, the learner's demonstrated understanding and the next step. Link the board to the relevant note and honor existing permissions.
+When the user asks for continuity across sessions, or their workspace instructions already request it, use `continuous-study` if installed and an authorized destination is available. Discover it through the environment's skill catalog. Read the topic and its resume point before teaching. After a meaningful step, record concepts, questions, the learner's demonstrated understanding and the next step. Link the board to the relevant note and honor existing permissions.
 
 The drawing workflow stands on its own. If requested study memory is unavailable, deliver the lesson and a short summary the learner can save. Keep creating the requested board separate from permission to create a vault, monitor other chats, publish content or execute a system depicted in a lesson.

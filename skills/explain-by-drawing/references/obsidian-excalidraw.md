@@ -64,7 +64,7 @@ Define `folder`, `title`, `guideText`, `topic` and `date` for this lesson. The p
 
 ## Edit an existing board
 
-1. Open the exact file and preserve a recoverable copy before editing. The optional `estudo-continuo` skill provides a snapshot helper. A local backup is sufficient when working independently.
+1. Open the exact file and preserve a recoverable copy before editing. The optional `continuous-study` skill provides a snapshot helper. A local backup is sufficient when working independently.
 2. Select the view by file path. With multiple drawings open, match the desired file before setting the automation view.
 
    ```javascript

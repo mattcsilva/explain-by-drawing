@@ -1,5 +1,5 @@
 ---
-name: estudo-continuo
+name: continuous-study
 description: "Maintain study continuity in an authorized Obsidian vault when a user starts, resumes or deepens a topic. Record concepts, questions, evidence of understanding and a concrete place to resume across chats."
 ---
 
@@ -7,7 +7,7 @@ description: "Maintain study continuity in an authorized Obsidian vault when a u
 
 ## Find the authorized destination
 
-Use the vault path the user supplied in the session or workspace instructions. Confirm permission for study records only if the user has yet to give it. Discover the vault's home note, study index and organization guide. Keep its existing folder names, note language and metadata conventions. This skill can accompany an `explicar-desenhando` lesson or work independently.
+Use the vault path the user supplied in the session or workspace instructions. Confirm permission for study records only if the user has yet to give it. Discover the vault's home note, study index and organization guide. Keep its existing folder names, note language and metadata conventions. This skill can accompany an `explain-by-drawing` lesson or work independently.
 
 ## Consult before teaching
 

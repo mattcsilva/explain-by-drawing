@@ -89,7 +89,7 @@ test('detects an arrow crossing a card after an edit', () => {
   assert.throws(() => checkScene(s), /card/);
 });
 test('CLI writes the files and protects an existing drawing', () => {
-  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'explicar-desenhando-test-'));
+  const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'explain-by-drawing-test-'));
   try {
     const input = path.join(tmp, 'input.json'), output = path.join(tmp, 'output');
     fs.writeFileSync(input, JSON.stringify(base));
@@ -102,7 +102,7 @@ test('CLI writes the files and protects an existing drawing', () => {
     assert.equal(fs.readFileSync(path.join(output, 'board.excalidraw'), 'utf8'), before);
   } finally {
     assert.equal(path.dirname(path.resolve(tmp)), path.resolve(os.tmpdir()));
-    assert.ok(path.basename(tmp).startsWith('explicar-desenhando-test-'));
+    assert.ok(path.basename(tmp).startsWith('explain-by-drawing-test-'));
     fs.rmSync(tmp, { recursive: true, force: true });
   }
 });
