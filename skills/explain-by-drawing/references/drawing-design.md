@@ -8,7 +8,7 @@ Give the main path one reading direction. Give outgoing requests and returning r
 
 Identify roles in words as well as color. Give the question and the central parts the most visual weight. Keep any condition that changes the answer visible at reading size.
 
-The generator supplies four layouts with calculated spacing. Choose one from the lesson plan and compare your sketch with a worked example. [Components](components.md) · [Lesson plan](lesson-plan-and-review.md) · [Worked examples](worked-examples.md)
+The generator supplies four layouts with calculated spacing. Trace the proposed arrangement with the example before adapting it. In the paragraph-revision example, the four-step cycle shows a draft that still needs work. To explain when review ends, draw the decision at “Check the draft” with one path to revision and one to a finished draft. [Components](components.md) · [Lesson plan](lesson-plan-and-review.md) · [Worked examples](worked-examples.md)
 
 ## Suggested visual settings
 

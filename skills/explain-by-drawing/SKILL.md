@@ -1,15 +1,19 @@
 ---
 name: explain-by-drawing
-description: "Teach a concept through editable explanatory drawings. Use when someone asks to learn through diagrams, understand a mechanism visually, or continue a lesson on an existing board. Supports Excalidraw in Obsidian and standalone diagrams, with optional study memory."
+description: "Use when someone asks for a drawing or diagram to explain a concept, show how something works, or show why a result is true. Requests include 'draw how it works', 'desenha pra eu entender' and 'mostre isso em um esquema'. Create an editable drawing with a short reading guide, or expand part of an existing board when the learner asks for more detail. Supports standalone SVG and Excalidraw in Obsidian."
 ---
 
 # Explain by Drawing
 
-Use a drawing to help the learner locate something, follow a change or predict a consequence. Deliver a readable drawing and a short guide to reading it. Prefer editable Excalidraw boards in Obsidian when available and respect the user's choice of format.
+Use a drawing to help the learner locate something, follow a change or predict a consequence. Include a short reading guide with each drawing you create or update. Respect the user's choice of format. When the format is open and an Obsidian integration is already available, prefer an editable Excalidraw board.
 
-## Establish the question
+## Identify the requested result and check feasibility
 
-Start from the user's current question and the material available in the conversation. If the learner is returning to a board, find the relevant part and reuse its names, positions and annotations. Let the current question take priority over an earlier suggested next step. Keep a single-question explanation focused.
+Start with the learner's current question and what they expect to receive. Use the conversation to distinguish a new drawing, a change to a particular board, or a walkthrough of an existing drawing. Honor any specified format, file and destination. When returning to a board, reuse the names and positions from the relevant part. Keep a single-question explanation focused.
+
+Before composing, check only what this delivery needs, using the files, permissions and tools already available. For a new SVG, a way to write the file at the requested destination is enough to start. For a walkthrough, read the drawing. For an edit, locate and read the current board, confirm you can save changes to it, and preserve its annotations. For work directly in Obsidian, check the [local integration](references/obsidian-excalidraw.md).
+
+When the request is clear and feasible, proceed directly. If a tool is unavailable, use another available route that meets the request. If a required input is still missing after checking the available context, ask for that item. If the requested result is out of reach, explain the blocker and offer the closest feasible alternative. Ask before changing an explicitly requested file, format or destination.
 
 Use familiar words, short sentences and one idea per block. Lead with the idea that answers the question. Show the input, what acts on it and the result. Explain conditions that change the result. When storage or execution is central to the question, identify where actions happen, who controls them and what survives an interruption. Verify specialized, changing or consequential claims against appropriate sources.
 
@@ -23,11 +27,13 @@ Apply this to the diagram itself. Put a short explanation next to the relevant p
 
 Use the [lesson plan](references/lesson-plan-and-review.md) to prepare the question, answer, example, prerequisites, transitions and scope of each new board. Do this as authoring work. A learner should be able to receive the lesson without first completing a questionnaire.
 
-Choose the arrangement by the relationship it must show. Use containment for location or responsibility, a sequence for transformations, a cycle for repeated actions with feedback, matching panels for a controlled comparison, and labeled axes with units for quantities. Make every arrow readable as an action or a transfer with an identifiable source and destination. For comparisons, say what changes and what stays fixed.
+Choose the arrangement by finishing this sentence for yourself: “The reader can tell ___ by looking at ___.” Draw the evidence the answer depends on. Use boundaries for location, stages for a transformation, or aligned marks on a common scale for a change in quantity. For a claim about shape, draw the objects and mark the correspondence that explains it. For a choice or loop exit, put the deciding question at the fork and label each relevant path through to its outcome. For a comparison, keep the reference case visible and change one condition.
 
-Read the relevant [worked example](references/worked-examples.md). When one of the four layouts fits, adapt its input and use the [layout generator](references/components.md) to produce an SVG preview and an editable Excalidraw file. It calculates spacing and checks for collisions. For other relationships, compose the board manually. If Node.js is unavailable, use the examples and an available drawing tool. Preserve the chosen format and report any practical limitation.
+Trace the example on a quick sketch before choosing a tool. When a [worked example](references/worked-examples.md) fits every essential relationship, adapt its input and use the [layout generator](references/components.md) for an SVG preview and editable Excalidraw file. If the template hides a decision, a physical shape or a quantity the reader needs to see, compose that part directly in the requested drawing format. With limited tools, a few labeled editable shapes or paths can carry the same explanation.
 
-Follow the [drawing design guide](references/drawing-design.md) for reading order, labels and visual review. For creating, editing or exporting directly through the Obsidian plugin, use the [Obsidian and Excalidraw guide](references/obsidian-excalidraw.md).
+For a request for depth, locate the first box or arrow whose label names an operation the learner still needs explained. Open that exact part in an inset or a linked board. Carry its label and the same example into the detail, show the intermediate change, then point back to where its result is used. Repeat for the other dependencies the question actually asks about. Stop once the learner can trace the answer at the requested depth. A single picture can be enough.
+
+Follow the [drawing design guide](references/drawing-design.md) for reading order, labels and visual review.
 
 ## Teach with the board
 
@@ -37,10 +43,10 @@ Where helpful, vary one condition and ask for a prediction, such as what happens
 
 ## Review and deliver
 
-1. Trace the example from start to finish. Check new vocabulary, inputs, outputs, causes, stopping conditions and how each state is reached. Verify the conclusion under the conditions shown.
+1. Cover the reading guide and trace the example on the drawing. Point to what establishes the answer. Follow each relevant alternative to its result and, for a detail view, back to the named step. If a necessary link exists only in prose, add the missing mark, intermediate state or path. Check the facts and the conclusion under the conditions shown.
 2. Inspect the rendered board at reading size. Check text clipping, arrow direction, labels, contrast, margins and the footer. Correct the drawing and regenerate affected previews.
 3. Preserve the editable original and the user's annotations. Before changing an existing board, read its current version, preserve a recoverable copy and reconcile recent edits. Use a fresh directory when running the generator.
-4. Deliver the relevant image, the editable file or board link, and a brief indication of where to resume. Describe which preview or application view you actually inspected. When Obsidian integration is unavailable, offer an available representation such as an SVG or a small Mermaid diagram.
+4. Deliver the requested result and a brief indication of where to resume. For a new or updated drawing, confirm the saved output at its destination and provide the editable file or board link. Describe which preview or application view you inspected. If rendering was unavailable, state that visual review is still pending.
 
 ## Optional study memory
 
