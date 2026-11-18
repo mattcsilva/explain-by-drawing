@@ -1,0 +1,6 @@
+# Local output from the README example and release packaging
+/token-board/
+/dist/
+
+# Development-session captures from the instruction trial
+/evaluations/instruction-trial/
