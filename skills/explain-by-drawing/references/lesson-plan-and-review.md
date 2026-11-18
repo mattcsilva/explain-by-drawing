@@ -30,10 +30,14 @@ State the depth of the picture precisely. A comparison might illustrate the effe
 | What happens on each attempt? | `cycle` | Feedback that changes the next attempt and a condition for exiting |
 | What changes between these cases? | `compare` | Comparable cases with a controlled difference |
 | Where does this happen or belong? | `regions` | Meaningful boundaries and the information that crosses them |
+| Which outcome follows from this condition? | Labeled fork, drawn directly | The state being tested, the rule at the fork and the destination of each relevant outcome |
+| Why do these shapes or quantities correspond? | Annotated objects, aligned strips or axes, drawn directly | The shared reference, the correspondence and the visible feature that establishes the claim |
 
 The supplied region layout supports two regions with a round trip. The cycle layout supports four stages. Pick a manual layout or another format when the example requires a different structure.
 
-Keep one question per board when that improves readability. Several boards can follow the same example from an overview to a closer look and then a failure case. Keep names, positions and colors recognizable. Place foundations before the first board that depends on them, even if you drew them later.
+Keep one question per board when that improves readability. To expand an overview, name the part being opened, carry in its input, show the operation at a finer scale, then carry its output back. Use the same label on the overview and detail and give a return cue that works in the delivered format (a matching panel label, a frame name or a file link). Place any prerequisite before the first step that uses it.
+
+For example, the token overview has an arrow labeled “look up vector.” To open it, carry the example ID 42 into a small drawing of the lookup table. Show neighboring IDs and their invented rows, mark row 42, and trace its three values back to the overview's vector. The detail now explains what “look up” does. Keep the training of those values for a question about training.
 
 ## Review the content and the image separately
 
